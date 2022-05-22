@@ -12,6 +12,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 50px; /* Full-height: remove this if you want "auto" height */
+    width: 100%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    background-color: #fff; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+
 ;
 }
 header #logo img{
@@ -25,7 +33,25 @@ a {
     color: #000;
     text-decoration: none;
 }
-
+.emailForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.emailForm .btn{
+    padding: 0 40px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+    background-color: orange;
+}
 .container {
     max-width: 1000px;
     width: 100%;
